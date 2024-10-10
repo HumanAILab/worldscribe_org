@@ -25,7 +25,7 @@
 
 
   <title>Academic Project Page</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -52,28 +52,29 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">WorldScribe: Towards Context-Aware Live Visual Descriptions</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="https://rueiche.me/" target="_blank">Ruei-Che Chang</a>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="https://yuxuanliu.me/" target="_blank">Yuxuan Liu</a>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="https://guoanhong.com/" target="_blank">Anhong Guo</a>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block">University of Michigan<br>ACM Symposium on User Interface Software and Technology 2024 (UIST ’24)</span><br>
+                    <span class="author-block" style="color:#5B29B5"><b>Best Paper Award</b> 🏆</span>
+                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="static/pdfs/worldscribe.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -82,8 +83,48 @@
                       </a>
                     </span>
 
-                    <!-- Supplementary PDF link -->
                     <span class="link-block">
+                      <a href="static/pdfs/poster.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Poster</span>
+                    </a>
+                  </span>
+
+                  <span class="link-block">
+                    <a href="https://arxiv.org/abs/2408.06627" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+
+                    <span class="link-block">
+                      <a href="https://www.youtube.com/watch?v=9dRExJzyqxw&ab_channel=Ruei-CheChang" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-video"></i>
+                      </span>
+                      <span>Full Video</span>
+                    </a>
+                  </span>
+
+                    <span class="link-block">
+                      <a href="https://www.youtube.com/watch?v=zpN85oFrSOE&ab_channel=AnhongGuo" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-video"></i>
+                      </span>
+                      <span>Video Preview</span>
+                    </a>
+                  </span>
+
+                    <!-- Supplementary PDF link -->
+                    <!-- <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
@@ -91,10 +132,10 @@
                       </span>
                       <span>Supplementary</span>
                     </a>
-                  </span>
+                  </span> -->
 
                   <!-- Github link -->
-                  <span class="link-block">
+                  <!-- <span class="link-block">
                     <a href="https://github.com/YOUR REPO HERE" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -102,18 +143,10 @@
                     </span>
                     <span>Code</span>
                   </a>
-                </span>
+                </span> -->
 
                 <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+                
             </div>
           </div>
         </div>
@@ -127,13 +160,17 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
+      <img src="static/images/teaser.jpg" alt="There are seven images in the figure in total. The first three describe figure 1 a that user turns quickly and the remaining four images describe figure 1 b that user remains static. Under the images there are three four rows represent descriptions generated by four different models, from top to bottom including YOLO World, Moondream, GPT-4v and WorldScribe (this work). 
+      In the row of YOLO World, there are descriptions from left to right images: (1) A laptop, a desk, a monitor, and a lamp. (2)  A laptop, a desk, and a monitor. (3) A desk, a cabinet, a printer, and a cat. (4) A desk, a cabinet, a printer, and a cat. This sentence is grayed out, representing not used in WorldScribe. (5) A desk, a cabinet, a printer, and a cat. This sentence is grayed out, representing not used in WorldScribe. (6) A desk, a cabinet, a printer, and a cat. This sentence is grayed out, representing not used in WorldScribe. (7) A desk, a cabinet, a printer, and a cat. This sentence is grayed out, representing not used in WorldScribe. 
+      In the row of Moondream, there are descriptions from left to right: (1) no description. And there is a bar to indicate there is a latency of model inference, stretching for one image length. (2) A laptop is sitting on a desk next to a monitor and a silver desk lamp (outdated). This sentence has strikethrough and is red, representing this description is outdated based on the current scene. This sentence stretch across two images as this sentence is longer. (2) A cat sitting on top of a white desk, looking out the window. This sentence is orange and is picked up by the WorldScribe used as follows. This sentence stretch across two images as this sentence is also longer.  (3) The desk is situated near a window, providing the cat with a view ot observe…. This sentence stretch across two images as this sentence is longer. This sentence is grayed out, representing not used in WorldScribe. 
+      In the row of GPT-4v, there are descriptions from left to right: (1) no description. And there is a bar to indicate there is a latency of model inference, stretching for two images length which is more than Moondream as GPT-4v takes longer inference time. (2) The desk lamp has a sleek silver finish with a curved arm and a cylindrical head… (Outdated) This sentence has strikethrough and is red, representing this description is outdated based on the current scene. This sentence also stretch to three images, indicating its longer sentence. (3) A light cream-colored cat with a slender body and long tail is sitting and looking out of a window. Three closed drawers underneath the open one appear to have  …. This sentence stretches for two images.
+      In the row of WorldScribe (this work), there are descriptions from left to right: (1) A laptop, a desk, a monitor, and a lamp. This sentence stretches for one image, borrowed from Yolo World. (2) A laptop, a desk, and a monitor. This sentence stretches for one image, borrowed from Yolo World. (3) A desk, a cabinet, a printer, and a cat. This sentence stretches for one image, borrowed from Yolo World. (4)  A cat sitting on top of a white desk, looking out the window. This sentence is orange and borrowed from Moondream, and stretches for two images as well. (5) A light cream-colored cat with a slender body and long tail is sitting and looking out of a window. Three closed drawers underneath the open one appear to have  ….  This sentence stretches for two images, borrowed from GPT-4v.">
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        WorldScribe dynamically combines different vision-language models to provide live adaptive descriptions. When the user
+        turns quickly to scan the environment and yields frequent visual changes, WorldScribe generates basic descriptions with
+        word-level labels or general descriptions with objects and spatial relationships. On
+        the other hand, when the user remains static and faces a new scene for a duration that indicates their interests, WorldScribe
+        provides rich descriptions from an overview to details to facilitate their visual scene understanding.      
       </h2>
     </div>
   </div>
@@ -148,7 +185,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Automated live visual descriptions can aid blind people in understanding their surroundings with autonomy and independence. However, providing descriptions that are rich, contextual, and just-in-time has been a long-standing challenge in accessibility. In this work, we develop WorldScribe, a system that generates automated live real-world visual descriptions that are customizable and adaptive to users’ contexts. WorldScribe’s description is customized to users’ intent and prioritized based on semantic relevance. WorldScribe is also adaptive to visual contexts, e.g., providing consecutively succinct descriptions for dynamic scenes, while presenting longer and detailed ones for stable settings. Additionally, WorldScribe is adaptive to sound contexts, e.g., increasing volume or pausing in noisy environments. WorldScribe is powered by a suite of vision, language, and sound recognition models. It presents a description generation pipeline that balances the tradeoffs between their richness and latency to support real-time usage. The design of WorldScribe is informed by prior work on providing visual descriptions and a formative study with blind participants. Our user study and following pipeline evaluation show that WorldScribe can provide real-time and fairly accurate visual descriptions to facilitate environment understanding that is adaptive and customized to users’ contexts. Finally, we discuss the implications and further steps toward making live visual descriptions more context-aware and humanized.
           </p>
         </div>
       </div>
@@ -159,33 +196,30 @@
 
 
 <!-- Image carousel -->
+ <!-- 
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
-        <!-- Your image here -->
         <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           First image description.
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
         <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           Second image description.
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
         <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
          Third image description.
        </h2>
      </div>
      <div class="item">
-      <!-- Your image here -->
       <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
         Fourth image description.
@@ -195,23 +229,99 @@
 </div>
 </div>
 </section>
+-->
 <!-- End image carousel -->
 
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
+<section class="hero is-small"></section>
   <div class="hero-body">
     <div class="container">
       <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
+      <h2 class="title is-3">usage scenario</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <div class="hero-body">
+            <img src="static/images/scene1.png" alt="">
+            <h2 class="subtitle has-text-centered">
+            (a) Brook is looking for a silver laptop using World-
+            Scribe in the lab by first (b) specifying his intent. (c) As he
+            moves quickly, WorldScribe reads out names of fixtures, and
+            (d) pauses or increases its volume based on environmental
+            sounds. When approaching his seat and Brook stops to scan,
+            (e) WorldScribe provides verbose descriptions when the vi-
+            sual scene is relevant to his intent, (f) allowing him to follow
+            the cues and find the laptop.
+            </h2>
+          </div>
+          
+          <div class="hero-body">
+            <img src="static/images/scene2.png" alt="">
+            <h2 class="subtitle has-text-centered">
+            (a) Brook takes a break on the balcony and uses
+              WorldScribe to explore his surroundings. (b) Through the
+              live visual descriptions, he knows the sky is sunny, (c) plants
+              are growing, and also notices (d) his friends are here. (e) He
+              then joins them and has a delightful tea time. (f) WorldScribe
+              facilitate the understanding and access of his surroundings,
+              and make his day.
+            </h2>
+  
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Youtube video -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3">system architecture</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="hero-body">
+            <img src="static/images/system_diagram.jpg" alt="WorldScribe system architecture. 
+            Figure a 
+            The user first specifies their intent through speech and WorldScribe decomposes it into specific visual attributes and relevant object classes. 
+            Figure b 
+            WorldScribe extracts keyframes based on user orientation, object compositions, and frame similarity.
+            Figure c
+            Next, it generates candidate descriptions with a suite of visual and language models. For instance, yolo world is the fastest one and generates description like “A desk, a printer, a cabinet and a cat”. Moondream is the second fast one and generates description like A cat is sitting on top of a white desk. GPT-4v is the slowest one and generates detailed object descriptions like 1. A silver laptop is … 2. A black keyboard is … 3. A white desk is ….
+            Figure d 
+            WorldScribe then prioritizes the descriptions based on timeliness, richness, similarity to the user's intent and proximity to the user. 
+            Figure e 
+            Finally, it detects environmental sounds and manipulates the presentation of the descriptions accordingly.">
+            <h2 class="subtitle has-text-centered">
+              (a) The user first specifies their intent through speech and WorldScribe decomposes
+              it into specific visual attributes and relevant objects. (b) WorldScribe extracts keyframes based on user orientation, object
+              compositions, and frame similarity. (c) Next, it generates candidate descriptions with a suite of visual and language models. (d)
+              WorldScribe then prioritizes the descriptions based on the user's intent, proximity to the user, and relevance to the current
+              visual context. (e) Finally, it detects environmental sounds and manipulates the presentation of the descriptions accordingly.
+            </h2>
+
+            <img src="static/images/granularity.jpg" alt="WorldScribe description generation pipeline with different inference latency and granularity.
+            Figure a 
+            Upon receiving a keyframe, WorldScribe starts all visual description tasks.
+            Figure b 
+            First, YOLO World identifies objects as word-level labels in real-time (.1s). The image shows texts “Yolo World Output: A chair, a laptop, a monitor, a desk, a lamp, and a printer”
+            Figure c 
+            Second, Moondream generates short descriptions with objects and spatial relationships, with a small delay (~3s). The image shows texts “Moondream Output: A computer desk with a laptop and a monitor on it. A chair is placed in front of the desk, and a printer is also present in the room.”
+            Figure d 
+            Finally, GPT-4v provides detailed descriptions with visual attributes, with a longer delay (~9s).
+            The estimated inference time in each model was calculated based on our computing platforms and log data in our user evaluation. The image shows texts “GPT-4v Output: (1) An ergonomic black office chair with mesh back support is positioned facing away from the desk. (2) A white desk supports a laptop with an open website and has an additional monitor displaying a mountainous wallpaper. (3) A white printer rests on a small cabinet with open shelves, containing paper and various small items. (4) A white table lamp with a cylindrical shade is attached to the additional monitor, illuminating the scene. (5)The carpeted floor under the furniture appears textured in soft gray, complementing the room's neutral color palette.”">
+            <h2 class="subtitle has-text-centered">
+              (a) The user first specifies their intent through speech and WorldScribe decomposes
+              it into specific visual attributes and relevant objects. (b) WorldScribe extracts keyframes based on user orientation, object
+              compositions, and frame similarity. (c) Next, it generates candidate descriptions with a suite of visual and language models. (d)
+              WorldScribe then prioritizes the descriptions based on the user's intent, proximity to the user, and relevance to the current
+              visual context. (e) Finally, it detects environmental sounds and manipulates the presentation of the descriptions accordingly.
+            </h2>
+
           </div>
         </div>
       </div>
@@ -222,36 +332,14 @@
 
 
 <!-- Video carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
+      <h2 class="title is-3">results</h2>
+      
     </div>
   </div>
-</section>
+</section> -->
 <!-- End video carousel -->
 
 
@@ -260,7 +348,7 @@
 
 
 <!-- Paper poster -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
@@ -270,7 +358,7 @@
         
       </div>
     </div>
-  </section>
+  </section> -->
 <!--End paper poster -->
 
 
@@ -278,7 +366,12 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@article{chang2024worldscribe,
+        title={WorldScribe: Towards Context-Aware Live Visual Descriptions},
+        author={Chang, Ruei-Che and Liu, Yuxuan and Guo, Anhong},
+        journal={arXiv preprint arXiv:2408.06627},
+        year={2024}
+      }</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
