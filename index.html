@@ -6,11 +6,7 @@
   <!-- Replace the content tag with appropriate information -->
   <meta name="description" content="This is the project page for WorldScribe, which was published at UIST'24.">
   <meta property="og:title" content="WorldScribe from Human-AI Lab"/>
-  <meta property="og:description" content="In this work, we develop WorldScribe, a system that generates automated
-  live real-world visual descriptions that are customizable and adaptive to users’ contexts: (i) WorldScribe’s descriptions are tailored
-  to users' intents and prioritized based on semantic relevance. (ii) WorldScribe is adaptive to visual contexts, e.g., providing consecu-
-  tively succinct descriptions for dynamic scenes, while presenting longer and detailed ones for stable settings. (iii) WorldScribe is
-  adaptive to sound contexts, e.g., increasing volume in noisy environments, or pausing when conversations start."/>
+  <meta property="og:description" content="In this work, we develop WorldScribe, a system that generates automated live real-world visual descriptions that are customizable and adaptive to users’ contexts: (i) WorldScribe’s descriptions are tailored to users' intents and prioritized based on semantic relevance. (ii) WorldScribe is adaptive to visual contexts, e.g., providing consecutively succinct descriptions for dynamic scenes, while presenting longer and detailed ones for stable settings. (iii) WorldScribe is adaptive to sound contexts, e.g., increasing volume in noisy environments, or pausing when conversations start."/>
   <meta property="og:url" content="https://guoanhong.com/"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="static/image/your_banner_image.png" />
@@ -170,11 +166,7 @@
       In the row of GPT-4v, there are descriptions from left to right: (1) no description. And there is a bar to indicate there is a latency of model inference, stretching for two images length which is more than Moondream as GPT-4v takes longer inference time. (2) The desk lamp has a sleek silver finish with a curved arm and a cylindrical head… (Outdated) This sentence has strikethrough and is red, representing this description is outdated based on the current scene. This sentence also stretch to three images, indicating its longer sentence. (3) A light cream-colored cat with a slender body and long tail is sitting and looking out of a window. Three closed drawers underneath the open one appear to have  …. This sentence stretches for two images.
       In the row of WorldScribe (this work), there are descriptions from left to right: (1) A laptop, a desk, a monitor, and a lamp. This sentence stretches for one image, borrowed from Yolo World. (2) A laptop, a desk, and a monitor. This sentence stretches for one image, borrowed from Yolo World. (3) A desk, a cabinet, a printer, and a cat. This sentence stretches for one image, borrowed from Yolo World. (4)  A cat sitting on top of a white desk, looking out the window. This sentence is orange and borrowed from Moondream, and stretches for two images as well. (5) A light cream-colored cat with a slender body and long tail is sitting and looking out of a window. Three closed drawers underneath the open one appear to have  ….  This sentence stretches for two images, borrowed from GPT-4v.">
       <h2 class="subtitle has-text-centered">
-        WorldScribe dynamically combines different vision-language models to provide live adaptive descriptions. When the user
-        turns quickly to scan the environment and yields frequent visual changes, WorldScribe generates basic descriptions with
-        word-level labels or general descriptions with objects and spatial relationships. On
-        the other hand, when the user remains static and faces a new scene for a duration that indicates their interests, WorldScribe
-        provides rich descriptions from an overview to details to facilitate their visual scene understanding.      
+        WorldScribe dynamically combines different vision-language models to provide live adaptive descriptions. When the user turns quickly to scan the environment and yields frequent visual changes, WorldScribe generates basic descriptions with word-level labels or general descriptions with objects and spatial relationships. On the other hand, when the user remains static and faces a new scene for a duration that indicates their interests, WorldScribe provides rich descriptions from an overview to details to facilitate their visual scene understanding.      
       </h2>
     </div>
   </div>
@@ -247,27 +239,14 @@
           <div class="hero-body">
             <img src="static/images/scene1.png" alt="">
             <h2 class="subtitle has-text-centered">
-            (a) Brook is looking for a silver laptop using World-
-            Scribe in the lab by first (b) specifying his intent. (c) As he
-            moves quickly, WorldScribe reads out names of fixtures, and
-            (d) pauses or increases its volume based on environmental
-            sounds. When approaching his seat and Brook stops to scan,
-            (e) WorldScribe provides verbose descriptions when the vi-
-            sual scene is relevant to his intent, (f) allowing him to follow
-            the cues and find the laptop.
+            (a) Brook is looking for a silver laptop using WorldScribe in the lab by first (b) specifying his intent. (c) As he moves quickly, WorldScribe reads out names of fixtures, and (d) pauses or increases its volume based on environmental sounds. When approaching his seat and Brook stops to scan, (e) WorldScribe provides verbose descriptions when the visual scene is relevant to his intent, (f) allowing him to follow the cues and find the laptop.
             </h2>
           </div>
           
           <div class="hero-body">
             <img src="static/images/scene2.png" alt="">
             <h2 class="subtitle has-text-centered">
-            (a) Brook takes a break on the balcony and uses
-              WorldScribe to explore his surroundings. (b) Through the
-              live visual descriptions, he knows the sky is sunny, (c) plants
-              are growing, and also notices (d) his friends are here. (e) He
-              then joins them and has a delightful tea time. (f) WorldScribe
-              facilitate the understanding and access of his surroundings,
-              and make his day.
+            (a) Brook takes a break on the balcony and uses WorldScribe to explore his surroundings. (b) Through the live visual descriptions, he knows the sky is sunny, (c) plants are growing, and also notices (d) his friends are here. (e) He then joins them and has a delightful tea time. (f) WorldScribe facilitate the understanding and access of his surroundings, and make his day.
             </h2>
   
           </div>
@@ -319,11 +298,7 @@
             Finally, GPT-4v provides detailed descriptions with visual attributes, with a longer delay (~9s).
             The estimated inference time in each model was calculated based on our computing platforms and log data in our user evaluation. The image shows texts “GPT-4v Output: (1) An ergonomic black office chair with mesh back support is positioned facing away from the desk. (2) A white desk supports a laptop with an open website and has an additional monitor displaying a mountainous wallpaper. (3) A white printer rests on a small cabinet with open shelves, containing paper and various small items. (4) A white table lamp with a cylindrical shade is attached to the additional monitor, illuminating the scene. (5)The carpeted floor under the furniture appears textured in soft gray, complementing the room's neutral color palette.”">
             <h2 class="subtitle has-text-centered">
-              (a) The user first specifies their intent through speech and WorldScribe decomposes
-              it into specific visual attributes and relevant objects. (b) WorldScribe extracts keyframes based on user orientation, object
-              compositions, and frame similarity. (c) Next, it generates candidate descriptions with a suite of visual and language models. (d)
-              WorldScribe then prioritizes the descriptions based on the user's intent, proximity to the user, and relevance to the current
-              visual context. (e) Finally, it detects environmental sounds and manipulates the presentation of the descriptions accordingly.
+              (a) The user first specifies their intent through speech and WorldScribe decomposes it into specific visual attributes and relevant objects. (b) WorldScribe extracts keyframes based on user orientation, object compositions, and frame similarity. (c) Next, it generates candidate descriptions with a suite of visual and language models. (d) WorldScribe then prioritizes the descriptions based on the user's intent, proximity to the user, and relevance to the current visual context. (e) Finally, it detects environmental sounds and manipulates the presentation of the descriptions accordingly.
             </h2>
 
           </div>
@@ -370,12 +345,23 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@article{chang2024worldscribe,
-        title={WorldScribe: Towards Context-Aware Live Visual Descriptions},
-        author={Chang, Ruei-Che and Liu, Yuxuan and Guo, Anhong},
-        journal={arXiv preprint arXiv:2408.06627},
-        year={2024}
-      }</code></pre>
+      <pre><code>@inproceedings{worldscribe,
+        author = {Chang, Ruei-Che and Liu, Yuxuan and Guo, Anhong},
+        title = {WorldScribe: Towards Context-Aware Live Visual Descriptions},
+        year = {2024},
+        isbn = {9798400706288},
+        publisher = {Association for Computing Machinery},
+        address = {New York, NY, USA},
+        url = {https://doi.org/10.1145/3654777.3676375},
+        doi = {10.1145/3654777.3676375},
+        abstract = {Automated live visual descriptions can aid blind people in understanding their surroundings with autonomy and independence. However, providing descriptions that are rich, contextual, and just-in-time has been a long-standing challenge in accessibility. In this work, we develop WorldScribe, a system that generates automated live real-world visual descriptions that are customizable and adaptive to users’ contexts: (i) WorldScribe’s descriptions are tailored to users’ intents and prioritized based on semantic relevance. (ii) WorldScribe is adaptive to visual contexts, e.g., providing consecutively succinct descriptions for dynamic scenes, while presenting longer and detailed ones for stable settings. (iii) WorldScribe is adaptive to sound contexts, e.g., increasing volume in noisy environments, or pausing when conversations start. Powered by a suite of vision, language, and sound recognition models, WorldScribe introduces a description generation pipeline that balances the tradeoffs between their richness and latency to support real-time use. The design of WorldScribe is informed by prior work on providing visual descriptions and a formative study with blind participants. Our user study and subsequent pipeline evaluation show that WorldScribe can provide real-time and fairly accurate visual descriptions to facilitate environment understanding that is adaptive and customized to users’ contexts. Finally, we discuss the implications and further steps toward making live visual descriptions more context-aware and humanized.},
+        booktitle = {Proceedings of the 37th Annual ACM Symposium on User Interface Software and Technology},
+        articleno = {140},
+        numpages = {18},
+        keywords = {LLM, Visual descriptions, accessibility, assistive technology, blind, context-aware, customization, real world, sound, visually impaired},
+        location = {Pittsburgh, PA, USA},
+        series = {UIST '24}
+        }</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
